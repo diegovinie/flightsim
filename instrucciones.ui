@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DockWidget</class>
+ <widget class="QDockWidget" name="DockWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>504</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>461</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>INSTRUCCIONES:
+
+El objetivo del juego es llevar un avión cargado (artículos de contrabando etc.) desde el extremo izquierdo de la pantalla hacia la derecha lo más alejado posible, entendiendo que el arte de no ser detectado por los radares consiste en volar a baja altitud.
+
+Cada aeronave está identificada con un símbolo &quot;&gt;&quot; o &quot;&lt;&quot; según su dirección y con un número identificador sobre ese símbolo, siendo la primera aeronave el usuario.
+
+El resto de las aeronaves están controladas por la máquina y éstas pueden ser civiles o militares, en este último caso tienen capacidad de detección de naves ilegales.
+
+En el mapa se aprecia la representación gráfica del terreno. La escala horizontal es cada caracter equivale a 500m y la vertical cada caracter equivale a 100m
+
+Para despegar se abre el estrangulador (subir el &quot;Throttle&quot;), se liberan los frenos (&quot;Brakes&quot;) y cuando la aeronave alcance cierta velocidad se tira hacia abajo del timón (&quot;Rudder&quot;). El indicador de altitud comenzará a aumentar y ya se podrá subir el tren de aterrizaje (&quot;Gears&quot;).
+
+
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bAceptar">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>330</y>
+      <width>85</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&amp;Aceptar</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bAceptar</sender>
+   <signal>clicked()</signal>
+   <receiver>DockWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
